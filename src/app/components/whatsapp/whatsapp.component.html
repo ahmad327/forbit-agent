@@ -1,0 +1,8 @@
+<h2>Whatsapp</h2>
+
+<form [formGroup]="form">
+  <input formControlName="phone" type="text" placeholder="0521231231">
+  <button (click)="onSubmit()">שלח</button>
+  <div *ngIf="loading">שולח</div>
+  <div *ngIf="success">ההודעה נשלחה בהצלחה</div>
+</form>
